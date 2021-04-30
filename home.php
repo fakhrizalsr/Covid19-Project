@@ -1,8 +1,10 @@
 <?php
 $url = "https://covid19.mathdro.id/api/countries/Indonesia/confirmed";
+$url2 = "https://api.kawalcorona.com/indonesia/provinsi";
 $json = file_get_contents($url);
+$json2 = file_get_contents($url2);
 $data = json_decode($json, TRUE);
-
+$data2 = json_decode($json2, TRUE);
 ?>
 
 <!doctype html>
@@ -111,6 +113,50 @@ $data = json_decode($json, TRUE);
                                                         echo date('d-m-Y H:i:s', $timestamp / 1000); ?> WIB </p>
     </div>
     <!-- End of Dashboard Content -->
+
+    <!-- Dashboard Content-->
+    <div class="container-fluid">
+        <!-- Card -->
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <b>Data Kasus Covid-19 Berdasarkan Provinsi</b>
+            </div>
+            <!-- Table -->
+            <div class="table-responsive" style=" height: 400px;">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th style="text-align: left" scope="col">Provinsi</th>
+                            <th scope="col">Positif</th>
+                            <th scope="col">Sembuh</th>
+                            <th scope="col">Meninggal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $a = 1;
+                        foreach ($data2 as $prov) :
+                        ?>
+                            <tr>
+                                <td><?= $a++ ?></td>
+                                <td style="text-align: left"><?= $prov['attributes']['Provinsi']; ?></td>
+                                <td><?= $prov['attributes']['Kasus_Posi']; ?></td>
+                                <td><?= $prov['attributes']['Kasus_Semb']; ?></td>
+                                <td><?= $prov['attributes']['Kasus_Meni']; ?></td>
+                            </tr>
+                        <?php
+                        endforeach;
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End of Table -->
+        </div>
+        <!-- End of Card -->
+    </div>
+    <!-- End of Dashboard Content-->
+    <br>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
