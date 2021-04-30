@@ -61,7 +61,7 @@ $data = json_decode($json, TRUE);
     <!-- Dashboard Content -->
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
-            <!-- Confirmed Card -->
+            <!-- Total Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -71,6 +71,8 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End Total Card -->
+            <!-- Petugas Medis Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -80,6 +82,8 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End Petugas Medis Card -->
+            <!-- Petugas Publik Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -89,6 +93,8 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End Petugas Publik Card -->
+            <!-- Lansia Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -98,6 +104,8 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End of Lansia Card -->
+            <!-- Vaksinasi 1 Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -107,6 +115,8 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End Vaksinasi 1 Card -->
+            <!-- Vaksinasi 2 Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
@@ -116,6 +126,7 @@ $data = json_decode($json, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End of Vaksinasi 2 Card -->
         </div>
     </div>
     <!-- End of Dashboard Content -->
