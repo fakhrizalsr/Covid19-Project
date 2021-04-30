@@ -1,3 +1,10 @@
+<?php
+$url = "https://covid19.mathdro.id/api/countries/Indonesia/confirmed";
+$json = file_get_contents($url);
+$data = json_decode($json, TRUE);
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -17,6 +24,7 @@
 
     <!-- Title -->
     <title>Home | Covid-19 Project</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
 </head>
 
 <body>
@@ -54,43 +62,53 @@
     <!-- Dashboard Content -->
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
-        <div class="col mb-4">
+            <!-- Confirmed Card -->
+            <div class="col mb-4">
                 <div class="card text-white bg-danger h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Positif</h5>
-                        <h2><b>120002102 &#128532;</b></h2>
+                        <h2><b><?= $data[0]['confirmed'] ?> &#128532;</b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
             </div>
+            <!-- End of Confirmed Card -->
+            <!-- Active Card -->
             <div class="col mb-4">
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text" style="color: gray;">Aktif</h5>
-                        <h2 style="color: gray;"><b>120002102 &#128543;</b></h2>
+                        <h2 style="color: gray;"><b><?= $data[0]['active'] ?> &#128543;</b></h2>
                         <h6 style="color: gray;">Orang</h6>
                     </div>
                 </div>
             </div>
+            <!-- End of Active Card -->
+            <!-- Recovered Card -->
             <div class="col mb-4">
                 <div class="card text-white bg-success h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sembuh</h5>
-                        <h2><b>120002102 &#128512;</b></h2>
+                        <h2><b><?= $data[0]['recovered'] ?> &#128512;</b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
             </div>
+            <!-- End of Recovered Card -->
+            <!-- Deaths Card -->
             <div class="col mb-4">
                 <div class="card text-white bg-dark h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Meninggal</h5>
-                        <h2><b>120002102 &#128557;</b></h2>
+                        <h2><b><?= $data[0]['deaths'] ?> &#128557;</b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
             </div>
+            <!-- End of Deaths Card -->
         </div>
+        <p class="lead text-center">Update terakhir : <?php $timestamp = $data[0]["lastUpdate"];
+                                                        echo date('d-m-Y H:i:s', $timestamp / 1000); ?> WIB </p>
     </div>
     <!-- End of Dashboard Content -->
 
