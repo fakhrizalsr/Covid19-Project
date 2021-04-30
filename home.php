@@ -1,10 +1,17 @@
 <?php
+// APIs
 $url = "https://covid19.mathdro.id/api/countries/Indonesia/confirmed";
 $url2 = "https://api.kawalcorona.com/indonesia/provinsi";
+$url3 = "https://covid19.mathdro.id/api";
+$url4 = "https://api.kawalcorona.com/";
 $json = file_get_contents($url);
 $json2 = file_get_contents($url2);
+$json3 = file_get_contents($url3);
+$json4 = file_get_contents($url4);
 $data = json_decode($json, TRUE);
 $data2 = json_decode($json2, TRUE);
+$data3 = json_decode($json3, TRUE);
+$data4 = json_decode($json4, TRUE);
 ?>
 
 <!doctype html>
@@ -109,6 +116,7 @@ $data2 = json_decode($json2, TRUE);
             </div>
             <!-- End of Deaths Card -->
         </div>
+        <!-- Last Update-->
         <p class="lead text-center">Update terakhir : <?php $timestamp = $data[0]["lastUpdate"];
                                                         echo date('d-m-Y H:i:s', $timestamp / 1000); ?> WIB </p>
     </div>
@@ -155,10 +163,70 @@ $data2 = json_decode($json2, TRUE);
         </div>
         <!-- End of Card -->
     </div>
-    <!-- End of Dashboard Content-->
+    <!-- End of Dashboard Content -->
     <br>
 
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-transparent">
+                        <b>Live Data Kasus Covid-19 Global</b>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-center" style="margin-top: 12px;">Positif</h5>
+                        <h2 class="text-center" style="color: red;"><b><?= $data3['confirmed']['value'] ?></b></h2>
+                        <h5 class="text-center">Sembuh</h5>
+                        <h2 class="text-center" style="color: lime;"><b><?= $data3['recovered']['value'] ?></b></h2>
+                        <h5 class="text-center">Meninggal</h5>
+                        <h2 class="text-center"><b><?= $data3['deaths']['value'] ?></b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-transparent">
+                        <b>Data Kasus Covid-19 Global</b>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive table-hover" style=" height: 280px;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col" style="text-align: left;">Negara</th>
+                                        <th scope="col">Positif</th>
+                                        <th scope="col">Sembuh</th>
+                                        <th scope="col">Meninggal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $a = 1;
+                                    foreach ($data4 as $negara) :
+                                    ?>
+                                        <tr>
+                                            <td><?= $a++ ?></td>
+                                            <td style="text-align: left;"><?= $negara['attributes']['Country_Region']; ?></td>
+                                            <td><?= $negara['attributes']['Confirmed']; ?></td>
+                                            <td><?= $negara['attributes']['Recovered']; ?></td>
+                                            <td><?= $negara['attributes']['Deaths']; ?></td>
+                                        </tr>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Dashboard Content -->
+    <br><br>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 

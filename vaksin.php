@@ -66,7 +66,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Total Sasaran</h5>
-                        <h2><b><?= $data['totalsasaran'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['totalsasaran'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Medis</h5>
-                        <h2><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Publik</h5>
-                        <h2><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Lansia</h5>
-                        <h2><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 1</h5>
-                        <h2><b><?= $data['vaksinasi1'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['vaksinasi1'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ $data = json_decode($json, TRUE);
                 <div class="card bg-light h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 2</h5>
-                        <h2><b><?= $data['vaksinasi2'] ?></b></h2>
+                        <h2 class="text-body"><b><?= $data['vaksinasi2'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
