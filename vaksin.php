@@ -30,12 +30,14 @@ $data = json_decode($json, TRUE);
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Covid19-Project">Navbar w/ text</a>
+            <a class="navbar-brand" href="/Covid19-Project">
+                <img src="assets/img/covid19project.png" alt="" width="165" height="30">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/Covid19-Project">Home</a>
                     </li>

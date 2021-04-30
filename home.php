@@ -40,12 +40,14 @@ $data4 = json_decode($json4, TRUE);
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Covid19-Project">Navbar w/ text</a>
+            <a class="navbar-brand" href="/Covid19-Project">
+                <img src="assets/img/covid19project.png" alt="" width="165" height="30">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/Covid19-Project"><b>Home</b></a>
                     </li>
@@ -130,36 +132,38 @@ $data4 = json_decode($json4, TRUE);
                 <b>Data Kasus Covid-19 Berdasarkan Provinsi</b>
             </div>
             <!-- Table -->
-            <div class="table-responsive" style=" height: 400px;">
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">No.</th>
-                            <th style="text-align: left" scope="col">Provinsi</th>
-                            <th scope="col">Positif</th>
-                            <th scope="col">Sembuh</th>
-                            <th scope="col">Meninggal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        $a = 1;
-                        foreach ($data2 as $prov) :
-                        ?>
+            <div class="card-body">
+                <div class="table-responsive" style=" height: 400px;">
+                    <table class="table table-bordered table-hover">
+                        <thead>
                             <tr>
-                                <td><?= $a++ ?></td>
-                                <td style="text-align: left"><?= $prov['attributes']['Provinsi']; ?></td>
-                                <td><?= $prov['attributes']['Kasus_Posi']; ?></td>
-                                <td><?= $prov['attributes']['Kasus_Semb']; ?></td>
-                                <td><?= $prov['attributes']['Kasus_Meni']; ?></td>
+                                <th scope="col">No.</th>
+                                <th style="text-align: left" scope="col">Provinsi</th>
+                                <th scope="col">Positif</th>
+                                <th scope="col">Sembuh</th>
+                                <th scope="col">Meninggal</th>
                             </tr>
-                        <?php
-                        endforeach;
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-            <!-- End of Table -->
+                        </thead>
+                        <tbody>
+                            <?php
+                            $a = 1;
+                            foreach ($data2 as $prov) :
+                            ?>
+                                <tr>
+                                    <td><?= $a++ ?></td>
+                                    <td style="text-align: left"><?= $prov['attributes']['Provinsi']; ?></td>
+                                    <td><?= $prov['attributes']['Kasus_Posi']; ?></td>
+                                    <td><?= $prov['attributes']['Kasus_Semb']; ?></td>
+                                    <td><?= $prov['attributes']['Kasus_Meni']; ?></td>
+                                </tr>
+                            <?php
+                            endforeach;
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of Table -->
+            </div>           
         </div>
         <!-- End of Card -->
     </div>
@@ -169,6 +173,7 @@ $data4 = json_decode($json4, TRUE);
     <!-- Dashboard Content -->
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 g-4">
+            <!-- Card Content -->
             <div class="col">
                 <div class="card h-100">
                     <div class="card-header bg-transparent">
@@ -184,14 +189,16 @@ $data4 = json_decode($json4, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End of Card Content -->
+            <!-- Card Content -->
             <div class="col">
                 <div class="card h-100">
                     <div class="card-header bg-transparent">
                         <b>Data Kasus Covid-19 Global</b>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive table-hover" style=" height: 280px;">
-                            <table class="table table-bordered">
+                        <div class="table-responsive" style=" height: 280px;">
+                            <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col">No.</th>
@@ -222,6 +229,7 @@ $data4 = json_decode($json4, TRUE);
                     </div>
                 </div>
             </div>
+            <!-- End of Card Content -->
         </div>
     </div>
     <!-- End of Dashboard Content -->
