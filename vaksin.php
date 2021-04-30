@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/stylehome.css">
+    <link rel="stylesheet" href="assets/css/stylevaksin.css">
 
-    <title>Home | Covid-19 Project</title>
+    <title>Data Vaksin | Covid-19 Project</title>
 </head>
 
 <body>
@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Covid19-Project"><b>Home</b></a>
+                        <a class="nav-link" href="/Covid19-Project">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vaksin.php">Data Vaksin</a>
+                        <a class="nav-link active" aria-current="page" href="vaksin.php"><b>Data Vaksin</b></a>
                     </li>
                 </ul>
             </div>
