@@ -15,6 +15,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/stylehome.css">
 
+    <!-- Title -->
     <title>Home | Covid-19 Project</title>
 </head>
 
@@ -45,9 +46,53 @@
         <div class="container">
             <h1 class="display-4 text-center" style="margin-top: 20px;">Dashboard Coronavirus</h1>
             <p class="lead text-center">Live Data Kasus Covid-19 di Indonesia</p>
+            <br>
         </div>
     </div>
     <!-- End of Jumbotron -->
+
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
+        <div class="col mb-4">
+                <div class="card text-white bg-danger h-100 w-100">
+                    <div class="card-body">
+                        <h5 class="card-text">Positif</h5>
+                        <h2><b>120002102 &#128532;</b></h2>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card bg-light h-100 w-100">
+                    <div class="card-body">
+                        <h5 class="card-text" style="color: gray;">Aktif</h5>
+                        <h2 style="color: gray;"><b>120002102 &#128543;</b></h2>
+                        <h6 style="color: gray;">Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card text-white bg-success h-100 w-100">
+                    <div class="card-body">
+                        <h5 class="card-text">Sembuh</h5>
+                        <h2><b>120002102 &#128512;</b></h2>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card text-white bg-dark h-100 w-100">
+                    <div class="card-body">
+                        <h5 class="card-text">Meninggal</h5>
+                        <h2><b>120002102 &#128557;</b></h2>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Dashboard Content -->
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
