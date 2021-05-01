@@ -65,7 +65,7 @@ $data = json_decode($json, TRUE);
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
             <!-- Total Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Total Sasaran</h5>
                         <h2 class="text-body"><b><?= $data['totalsasaran'] ?></b></h2>
@@ -76,7 +76,7 @@ $data = json_decode($json, TRUE);
             <!-- End Total Card -->
             <!-- Petugas Medis Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Medis</h5>
                         <h2 class="text-body"><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
@@ -87,7 +87,7 @@ $data = json_decode($json, TRUE);
             <!-- End Petugas Medis Card -->
             <!-- Petugas Publik Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Publik</h5>
                         <h2 class="text-body"><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
@@ -98,7 +98,7 @@ $data = json_decode($json, TRUE);
             <!-- End Petugas Publik Card -->
             <!-- Lansia Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Lansia</h5>
                         <h2 class="text-body"><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
@@ -109,7 +109,7 @@ $data = json_decode($json, TRUE);
             <!-- End of Lansia Card -->
             <!-- Vaksinasi 1 Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 1</h5>
                         <h2 class="text-body"><b><?= $data['vaksinasi1'] ?></b></h2>
@@ -120,7 +120,7 @@ $data = json_decode($json, TRUE);
             <!-- End Vaksinasi 1 Card -->
             <!-- Vaksinasi 2 Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 2</h5>
                         <h2 class="text-body"><b><?= $data['vaksinasi2'] ?></b></h2>
