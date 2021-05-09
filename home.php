@@ -52,7 +52,7 @@ $data4 = json_decode($json4, TRUE);
                         <a class="nav-link active" aria-current="page" href="/Covid19-Project"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vaksin">Data Vaksin</a>
+                        <a class="nav-link" href="vaksin.php">Data Vaksin</a>
                     </li>
                 </ul>
             </div>
