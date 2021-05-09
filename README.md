@@ -1,6 +1,6 @@
 # Covid19-Project
 
-Just a simple website about Coronavirus update based on native PHP and using Bootstrap 5 Framework.<br>
+Just a simple website about Coronavirus update and Vaccination update in Indonesia based on native PHP and using Bootstrap 5 Framework.<br>
 Credits : 
 <ul>
 <li>Muhammad Mustadi (mathdroid) https://github.com/mathdroid/covid-19-api/
