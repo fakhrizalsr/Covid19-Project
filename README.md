@@ -8,4 +8,5 @@ Credits :
 <li>Teguh Aprianto (Ethical Hacker Indonesia) : https://kawalcorona.com/api/
 <li>Favicon and Navbar by : https://pixabay.com/id/vectors/coronavirus-ikon-merah-corona-5107715/
 </ul>
-Visit this link https://cov19project.herokuapp.com/ for the online website
+Visit this link https://cov19project.herokuapp.com/ to see the online web product made by me.<br>
+Made with &#10084; by fakhrizalsr at Bogor, Indonesia
