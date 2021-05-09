@@ -44,9 +44,6 @@ $data = json_decode($json, TRUE);
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="vaksin.php"><b>Data Vaksin</b></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="rumahsakit.php">RS Rujukan</a>
-                    </li>
                 </ul>
             </div>
         </div>
