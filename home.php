@@ -52,7 +52,7 @@ $data4 = json_decode($json4, TRUE);
                         <a class="nav-link active" aria-current="page" href="/Covid19-Project"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vaksin.php">Data Vaksin</a>
+                        <a class="nav-link" href="vaksin">Data Vaksin</a>
                     </li>
                 </ul>
             </div>
@@ -133,7 +133,7 @@ $data4 = json_decode($json4, TRUE);
             </div>
             <!-- Table -->
             <div class="card-body">
-                <div class="table-responsive" style=" height: 400px;">
+                <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -237,9 +237,9 @@ $data4 = json_decode($json4, TRUE);
 
     <!-- Footer -->
     <footer>
-        <div class="text-center p-3" style="background-color: #ffffff;">
+        <div class="text-center p-3">
             Made with &#10084; by
-            <a class="text-dark" href="https://github.com/fakhrizalsr">fakhrizalsr</a>
+            <a class="text-dark" href="https://github.com/fakhrizalsr" target="_blank">fakhrizalsr</a>
         </div>
     </footer>
     <!-- End of Footer -->

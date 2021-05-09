@@ -42,7 +42,7 @@ $data = json_decode($json, TRUE);
                         <a class="nav-link" href="/Covid19-Project">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="vaksin.php"><b>Data Vaksin</b></a>
+                        <a class="nav-link active" aria-current="page" href="vaksin"><b>Data Vaksin</b></a>
                     </li>
                 </ul>
             </div>
@@ -130,11 +130,20 @@ $data = json_decode($json, TRUE);
             </div>
             <!-- End of Vaksinasi 2 Card -->
         </div>
+      
     </div>
     <!-- End of Dashboard Content -->
 
+    <!-- Footer -->
+    <footer>
+        <div class="text-center p-3">
+            Made with &#10084; by
+            <a class="text-dark" href="https://github.com/fakhrizalsr" target="_blank">fakhrizalsr</a>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
 </html>
