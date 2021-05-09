@@ -65,10 +65,10 @@ $data = json_decode($json, TRUE);
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
             <!-- Total Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Total Sasaran</h5>
-                        <h2 class="text-body"><b><?= $data['totalsasaran'] ?></b></h2>
+                        <h2><b><?= $data['totalsasaran'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -76,10 +76,10 @@ $data = json_decode($json, TRUE);
             <!-- End Total Card -->
             <!-- Petugas Medis Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Medis</h5>
-                        <h2 class="text-body"><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -87,10 +87,10 @@ $data = json_decode($json, TRUE);
             <!-- End Petugas Medis Card -->
             <!-- Petugas Publik Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Publik</h5>
-                        <h2 class="text-body"><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -98,10 +98,10 @@ $data = json_decode($json, TRUE);
             <!-- End Petugas Publik Card -->
             <!-- Lansia Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Lansia</h5>
-                        <h2 class="text-body"><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -109,10 +109,10 @@ $data = json_decode($json, TRUE);
             <!-- End of Lansia Card -->
             <!-- Vaksinasi 1 Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 1</h5>
-                        <h2 class="text-body"><b><?= $data['vaksinasi1'] ?></b></h2>
+                        <h2><b><?= $data['vaksinasi1'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -120,10 +120,10 @@ $data = json_decode($json, TRUE);
             <!-- End Vaksinasi 1 Card -->
             <!-- Vaksinasi 2 Card -->
             <div class="col mb-4">
-                <div class="card h-100 w-100">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 2</h5>
-                        <h2 class="text-body"><b><?= $data['vaksinasi2'] ?></b></h2>
+                        <h2><b><?= $data['vaksinasi2'] ?></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -133,9 +133,8 @@ $data = json_decode($json, TRUE);
     </div>
     <!-- End of Dashboard Content -->
 
-
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
