@@ -55,7 +55,7 @@ $data4 = json_decode($json4, TRUE);
                         <a class="nav-link" href="vaksin.php">Data Vaksin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="rumahsakit.php">RS Rujukan</a>
                     </li>
                 </ul>
             </div>
