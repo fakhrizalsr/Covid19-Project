@@ -40,7 +40,7 @@ $data4 = json_decode($json4, TRUE);
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/cov19project.herokuapp.com">
+            <a class="navbar-brand" href="/index.php">
                 <img src="assets/img/covid19project.png" alt="" width="165" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ $data4 = json_decode($json4, TRUE);
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/cov19project.herokuapp.com"><b>Home</b></a>
+                        <a class="nav-link active" aria-current="page" href="/index.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="vaksin.php">Data Vaksin</a>
