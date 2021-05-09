@@ -39,10 +39,10 @@ $data = json_decode($json, TRUE);
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index>Home</a>
+                        <a class="nav-link" href="/index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="vaksin"><b>Data Vaksin</b></a>
+                        <a class="nav-link active" aria-current="page" href="/vaksin"><b>Data Vaksin</b></a>
                     </li>
                 </ul>
             </div>
