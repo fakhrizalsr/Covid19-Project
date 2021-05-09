@@ -1,13 +1,15 @@
 /* Scrollbar */
+
 ::-webkit-scrollbar {
     width: .45rem;
     height: .45rem;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: rgba(27, 27, 27, .4);
-    
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: transparent;
 }
 
@@ -25,4 +27,9 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
