@@ -30,7 +30,7 @@ $data = json_decode($json, TRUE);
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.php">
+            <a class="navbar-brand" href="/index">
                 <img src="assets/img/covid19project.png" alt="" width="165" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +39,10 @@ $data = json_decode($json, TRUE);
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.php">Home</a>
+                        <a class="nav-link" href="/index>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="vaksin.php"><b>Data Vaksin</b></a>
+                        <a class="nav-link active" aria-current="page" href="vaksin"><b>Data Vaksin</b></a>
                     </li>
                 </ul>
             </div>
