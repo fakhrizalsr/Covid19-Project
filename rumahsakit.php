@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/rs.css">
 
     <!-- Title -->
     <title>About | Covid-19 Project</title>
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="vaksin.php">Data Vaksin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html"><b>About</b></a>
+                        <a class="nav-link active" aria-current="page" href="rumahsakit.php"><b>RS Rujukan</b></a>
                     </li>
                 </ul>
             </div>
@@ -53,10 +53,19 @@
         <div class="container-fluid">
             <br>
             <h1 class="display-4 text-center">About</h1>
-            <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
     <!-- End of Jumbotron-->
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                This is some text within a card body.
+            </div>
+        </div>
+    </div>
+    <!-- End of Content -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
