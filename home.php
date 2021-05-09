@@ -23,8 +23,7 @@ $data4 = json_decode($json4, TRUE);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
@@ -86,7 +85,7 @@ $data4 = json_decode($json4, TRUE);
             <!-- End of Confirmed Card -->
             <!-- Active Card -->
             <div class="col mb-4">
-                <div class="card bg-light h-100 w-100">
+                <div class="card h-100 w-100">
                     <div class="card-body">
                         <h5 class="card-text" style="color: gray;">Aktif</h5>
                         <h2 style="color: gray;"><b><?= $data[0]['active'] ?> &#128543;</b></h2>
@@ -163,7 +162,7 @@ $data4 = json_decode($json4, TRUE);
                     </table>
                 </div>
                 <!-- End of Table -->
-            </div>           
+            </div>
         </div>
         <!-- End of Card -->
     </div>
@@ -235,6 +234,7 @@ $data4 = json_decode($json4, TRUE);
     <!-- End of Dashboard Content -->
     <br><br>
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
