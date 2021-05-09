@@ -24,11 +24,12 @@ $data4 = json_decode($json4, TRUE);
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/stylehome.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 
     <!-- Title -->
     <title>Home | Covid-19 Project</title>
@@ -52,6 +53,9 @@ $data4 = json_decode($json4, TRUE);
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="vaksin.php">Data Vaksin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                 </ul>
             </div>

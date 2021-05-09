@@ -19,7 +19,7 @@ $data = json_decode($json, TRUE);
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/stylevaksin.css">
+    <link rel="stylesheet" href="assets/css/vaksin.css">
 
     <!-- Title -->
     <title>Data Vaksin | Covid-19 Project</title>
@@ -44,6 +44,9 @@ $data = json_decode($json, TRUE);
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="vaksin.php"><b>Data Vaksin</b></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -52,7 +55,7 @@ $data = json_decode($json, TRUE);
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="display-4 text-center" style="margin-top: 20px;">Dashboard Vaksinasi</h1>
             <p class="lead text-center">Live Data Situasi Vaksinasi Covid-19 di Indonesia</p>
             <br>
