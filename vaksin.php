@@ -129,8 +129,7 @@ $data = json_decode($json, TRUE);
                 </div>
             </div>
             <!-- End of Vaksinasi 2 Card -->
-        </div>
-      
+        </div>        
     </div>
     <!-- End of Dashboard Content -->
 

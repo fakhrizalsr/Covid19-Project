@@ -25,11 +25,14 @@ $data4 = json_decode($json4, TRUE);
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-    <!-- Font -->
+    <!-- Font Roboto -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
+    <!-- Font Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
     <!-- Title -->
     <title>Home | Covid-19 Project</title>
@@ -235,6 +238,12 @@ $data4 = json_decode($json4, TRUE);
     <!-- End of Dashboard Content -->
     <br><br>
 
+    <!-- Scroll to Top Button -->
+    <button type="button" id="btn-back-to-top">
+        <b><i class="material-icons">arrow_upward</i></b>
+    </button>
+    <!-- End of Scroll to Top Button -->
+
     <!-- Footer -->
     <footer>
         <div class="text-center p-3">
@@ -246,6 +255,8 @@ $data4 = json_decode($json4, TRUE);
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/btn-back-to-top.js"></script>
+
 </body>
 
 </html>
