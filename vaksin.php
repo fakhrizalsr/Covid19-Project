@@ -18,6 +18,9 @@ $data = json_decode($json, TRUE);
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
+    <!-- Font Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/vaksin.css">
 
@@ -129,7 +132,7 @@ $data = json_decode($json, TRUE);
                 </div>
             </div>
             <!-- End of Vaksinasi 2 Card -->
-        </div>        
+        </div>
     </div>
     <!-- End of Dashboard Content -->
 
@@ -142,7 +145,15 @@ $data = json_decode($json, TRUE);
     </footer>
     <!-- End of Footer -->
 
+    <!-- Scroll to Top Button -->
+    <button type="button" id="btn-back-to-top">
+        <b><i class="material-icons">arrow_upward</i></b>
+    </button>
+    <!-- End of Scroll to Top Button -->
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top JS -->
+    <script src="assets/js/btn-back-to-top.js"></script>
 
 </html>

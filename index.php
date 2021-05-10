@@ -255,6 +255,7 @@ $data4 = json_decode($json4, TRUE);
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top JS -->
     <script src="assets/js/btn-back-to-top.js"></script>
 
 </body>
