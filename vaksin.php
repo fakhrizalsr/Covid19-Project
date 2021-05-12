@@ -5,7 +5,7 @@ $data = json_decode($json, TRUE);
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <!-- Required meta tags -->
@@ -71,7 +71,7 @@ $data = json_decode($json, TRUE);
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Total Sasaran</h5>
-                        <h2><b><?= $data['totalsasaran'] ?></b></h2>
+                        <h2><b><?= $data['totalsasaran'] ?> &#128567; </b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ $data = json_decode($json, TRUE);
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Medis</h5>
-                        <h2><b><?= $data['sasaranvaksinsdmk'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinsdmk'] ?> <span>&#129333; </span><span>	&#9877;</span></b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ $data = json_decode($json, TRUE);
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Petugas Publik</h5>
-                        <h2><b><?= $data['sasaranvaksinpetugaspublik'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinpetugaspublik'] ?> &#128105; </b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ $data = json_decode($json, TRUE);
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-text">Sasaran Lansia</h5>
-                        <h2><b><?= $data['sasaranvaksinlansia'] ?></b></h2>
+                        <h2><b><?= $data['sasaranvaksinlansia'] ?> &#129491; </b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -112,10 +112,10 @@ $data = json_decode($json, TRUE);
             <!-- End of Lansia Card -->
             <!-- Vaksinasi 1 Card -->
             <div class="col mb-4">
-                <div class="card h-100">
+                <div class="card text-white bg-success h-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 1</h5>
-                        <h2><b><?= $data['vaksinasi1'] ?></b></h2>
+                        <h2><b><?= $data['vaksinasi1'] ?> &#x1F489; </b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -123,10 +123,10 @@ $data = json_decode($json, TRUE);
             <!-- End Vaksinasi 1 Card -->
             <!-- Vaksinasi 2 Card -->
             <div class="col mb-4">
-                <div class="card h-100">
+                <div class="card text-white bg-success h-100">
                     <div class="card-body">
                         <h5 class="card-text">Vaksinasi 2</h5>
-                        <h2><b><?= $data['vaksinasi2'] ?></b></h2>
+                        <h2><b><?= $data['vaksinasi2'] ?> &#128137; </b></h2>
                         <h6>Orang</h6>
                     </div>
                 </div>
@@ -154,6 +154,6 @@ $data = json_decode($json, TRUE);
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Back to Top JS -->
-    <script src="assets/js/btn-back-to-top.js"></script>
+    <script src="assets/js/btnbacktotop.js"></script>
 
 </html>

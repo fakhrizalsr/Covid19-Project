@@ -15,7 +15,7 @@ $data4 = json_decode($json4, TRUE);
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <!-- Required meta tags -->
@@ -26,13 +26,13 @@ $data4 = json_decode($json4, TRUE);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     <!-- Font Roboto -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Font Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="assets/css/index.css" rel="stylesheet">
 
     <!-- Title -->
     <title>Home | Covid-19 Project</title>
@@ -256,7 +256,7 @@ $data4 = json_decode($json4, TRUE);
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Back to Top JS -->
-    <script src="assets/js/btn-back-to-top.js"></script>
+    <script src="assets/js/btnbacktotop.js"></script>
 
 </body>
 
