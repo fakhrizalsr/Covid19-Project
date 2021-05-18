@@ -7,6 +7,7 @@ Credits :
 <li>Reynadi Andreas Priesley (Reynadi531) : https://github.com/Reynadi531/vaksincovid19-api
 <li>Teguh Aprianto (Ethical Hacker Indonesia) : https://kawalcorona.com/api/
 <li>Favicon and Navbar by : https://pixabay.com/id/vectors/coronavirus-ikon-merah-corona-5107715/
+<li>Google, W3Schools, and Stack Overflow
 </ul>
 Visit this link https://cov19project.herokuapp.com/ to see the online web product made by me.<br>
 Made with &#10084; by fakhrizalsr at Bogor, Indonesia
