@@ -26,7 +26,7 @@ $data = json_decode($json, TRUE);
 
     <!-- Title -->
     <title>Data Vaksin | Covid-19 Project</title>
-    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico" alt="Covid19-Project">
 </head>
 
 <body>
@@ -34,7 +34,7 @@ $data = json_decode($json, TRUE);
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="assets/img/covid19project.png" alt="" width="165" height="30">
+                <img src="assets/img/covid19project.png" alt="Covid19-Project" width="165" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
