@@ -10,7 +10,7 @@ Credits :
 <li>Google, W3Schools, and Stack Overflow
 </ul>
 Visit this link https://cov19project.herokuapp.com/ to see the online web product made by me.<br>
-Made with &#10084; by fakhrizalsr at Bogor, Indonesia
+Made with &#10084; at Bogor, Indonesia
 
 # License
 
